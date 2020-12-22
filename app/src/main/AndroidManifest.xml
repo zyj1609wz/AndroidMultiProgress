@@ -11,10 +11,10 @@
         android:theme="@style/Theme.AndroidMultiProgress">
 
         <service
-            android:process=":remote"
             android:name=".MyService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true"
+            android:process=":remote" />
 
         <activity android:name=".MainActivity">
             <intent-filter>

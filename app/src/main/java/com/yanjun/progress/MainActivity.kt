@@ -26,13 +26,15 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         bindService()
     }
 
+    /**
+     * 绑定服务
+     */
     private fun bindService() {
         var intent = Intent(this, MyService::class.java)
         bindService(intent, serviceConnection, Context.BIND_AUTO_CREATE)
