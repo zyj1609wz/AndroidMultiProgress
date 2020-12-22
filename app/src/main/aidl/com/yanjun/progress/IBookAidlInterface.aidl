@@ -7,4 +7,5 @@ interface IBookAidlInterface {
      String getTitle();
      void setTitle(String title);
      Book getBook();
+     void setBook(in Book book);
 }

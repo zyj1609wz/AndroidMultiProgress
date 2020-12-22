@@ -23,9 +23,13 @@ class MyService : Service() {
             book.title = "书的名字"
             return book
         }
+
+        override fun setBook(book: Book?) {
+
+        }
     }
 
-    override fun onBind(intent: Intent): IBinder {
+    override fun onBind(intent: Intent): IBinder ?{
         return binder
     }
 
