@@ -23,6 +23,8 @@ class MainActivity : AppCompatActivity() {
             var name = iBookAidlInterface?.title
             Log.d("aidl", "getTitle: $name")
             iBookAidlInterface?.title = "我是一个title"
+
+            Log.d("aidl", "getBook: ${iBookAidlInterface?.book?.title}")
         }
     }
 

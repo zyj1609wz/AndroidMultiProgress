@@ -17,6 +17,12 @@ class MyService : Service() {
         override fun setTitle(title: String?) {
             Log.d("aidl", "service-setTitle:$title")
         }
+
+        override fun getBook(): Book {
+            var book = Book()
+            book.title = "书的名字"
+            return book
+        }
     }
 
     override fun onBind(intent: Intent): IBinder {
